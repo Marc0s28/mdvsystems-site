@@ -3,102 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MDV Systems</title>
-<meta name="description" content="MDV Systems provides hands-on tech support and manual testing for early-stage startups.">
 <meta name="theme-color" content="#0a1224">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0a1224;
-    --text: #e8eefb;
-    --muted: #8fa3c7;
-    --accent: #4f86f7;
-  }
-  * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 clamp(1.5rem, 8vw, 7rem);
-    -webkit-font-smoothing: antialiased;
-  }
-  main { max-width: 40rem; }
-  h1 {
-    margin: 0;
-    font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    font-size: clamp(2.4rem, 8.5vw, 4.5rem);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.05;
-  }
-  .sky {
-    position: fixed;
-    top: clamp(1.25rem, 4vw, 3rem);
-    right: clamp(1.25rem, 6vw, 5rem);
-    width: clamp(90px, 16vw, 160px);
-    height: auto;
-    pointer-events: none;
-  }
-  .rule {
-    width: 3.5rem;
-    height: 3px;
-    background: var(--accent);
-    border: 0;
-    margin: 1.75rem 0;
-  }
-  p {
-    margin: 0;
-    font-size: clamp(1.05rem, 2.5vw, 1.3rem);
-    line-height: 1.6;
-    color: var(--muted);
-  }
-  footer {
-    position: fixed;
-    bottom: 1.5rem;
-    left: clamp(1.5rem, 8vw, 7rem);
-    font-size: 0.85rem;
-    color: #5d7096;
-    line-height: 1.7;
-  }
-  footer a {
-    color: var(--muted);
-    text-decoration: none;
-    border-bottom: 1px solid #2c3d62;
-  }
-  footer a:hover, footer a:focus-visible {
-    color: var(--text);
-    border-bottom-color: var(--accent);
-  }
-</style>
+<link rel="stylesheet" href="style.css">
+<title>MDV Systems</title>
+<meta name="description" content="MDV Systems provides hands-on tech support and testing for early-stage startups, with the right mix of manual and automated testing.">
 </head>
 <body>
-  <main>
-    <h1>MDV Systems</h1>
-    <hr class="rule">
-    <p>Hands-on tech support and manual testing for early-stage startups.</p>
-    <!-- Optional: add a contact line, e.g.
-    <p style="margin-top:1.5rem"><a href="mailto:you@yourdomain.com" style="color:var(--accent)">you@yourdomain.com</a></p>
-    -->
-  </main>
-  <svg class="sky" viewBox="0 0 160 120" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <mask id="crescent">
-        <rect width="160" height="120" fill="#fff"/>
-        <circle cx="78" cy="48" r="34" fill="#000"/>
-      </mask>
-    </defs>
-    <circle cx="58" cy="62" r="40" fill="#cfdcf7" mask="url(#crescent)"/>
-    <path d="M125 21 Q127 33 139 35 Q127 37 125 49 Q123 37 111 35 Q123 33 125 21 Z" fill="#4f86f7"/>
-  </svg>
-  <footer>
-    <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSc81jRUxwceGjqa7oRrNdgb6ktjK-VWqi1N62pOIefulhXK7A/viewform?usp=publish-editor" target="_blank" rel="noopener">Contact here</a></div>
-    <div>&copy; 2026 MDV Systems, LLC</div>
-  </footer>
+<nav>
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="expertise.html" >Expertise</a>
+  <a href="contact.html" >Contact</a>
+</nav>
+<svg class="sky" viewBox="0 0 160 120" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs><mask id="crescent"><rect width="160" height="120" fill="#fff"/><circle cx="78" cy="48" r="34" fill="#000"/></mask></defs>
+  <circle cx="58" cy="62" r="40" fill="#cfdcf7" mask="url(#crescent)"/>
+  <path d="M125 21 Q127 33 139 35 Q127 37 125 49 Q123 37 111 35 Q123 33 125 21 Z" fill="#4f86f7"/>
+</svg>
+<main>
+  <h1>MDV Systems</h1>
+  <hr class="rule">
+  <p class="lead">Hands-on tech support and testing for early-stage startups.</p>
+  <p>We bring the right mix of manual and automated testing to optimize your test results.</p>
+  <section class="about">
+    <h2>Experience</h2>
+    <p>More than eight years in technical support and quality assurance for software companies, from early-stage startups to enterprise customers. The work spans building support operations from the ground up, writing documentation, root cause analysis, test planning, API testing, and close collaboration with engineering and product teams.</p>
+    <p>Fluent in English, Spanish, and Portuguese.</p>
+  </section>
+  <div class="grid">
+    <div class="card"><h3>The right mix</h3><p>Manual and automated testing, balanced to fit your product and stage.</p></div>
+    <div class="card"><h3>Global coverage</h3><p>Serving clients in the United States, Brazil, and Greece.</p></div>
+    <div class="card"><h3>Confidential</h3><p>Unless otherwise agreed upon, our client work is confidential.</p></div>
+  </div>
+</main>
+<footer>
+  <div><a href="contact.html">Contact here</a></div>
+  <div>&copy; 2026 MDV Systems, LLC</div>
+</footer>
 </body>
 </html>
